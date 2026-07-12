@@ -188,7 +188,7 @@ export function Footer() {
                 <img
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783792699/analystic-cloud-logo_k3b1fu.png"
                   alt="Analytics Clouds — Make Your Ideas Trending"
-                  className="h-10 w-auto"
+                  className="h-14 w-auto"
                   loading="lazy"
                   referrerPolicy="no-referrer"
                 />
@@ -197,6 +197,29 @@ export function Footer() {
               <p className="text-gray-400 text-xs sm:text-sm font-normal leading-relaxed">
                 A performance-driven digital marketing agency helping brands grow with data, creativity and technology. We turn clicks into customers and data into growth.
               </p>
+
+              {/* Follow Us Social Icons */}
+              <div className="space-y-3">
+                <h5 className="text-[10px] text-white font-bold tracking-widest uppercase">
+                  FOLLOW US
+                </h5>
+                <div className="flex gap-2.5 pt-1">
+                  {[
+                    { icon: <Facebook size={14} />, color: "bg-[#1877F2]/10 hover:bg-[#1877F2] text-[#1877F2] hover:text-white" },
+                    { icon: <Linkedin size={14} />, color: "bg-[#0A66C2]/10 hover:bg-[#0A66C2] text-[#0A66C2] hover:text-white" },
+                    { icon: <Instagram size={14} />, color: "bg-[#E4405F]/10 hover:bg-[#E4405F] text-[#E4405F] hover:text-white" },
+                    { icon: <Youtube size={14} />, color: "bg-[#FF0000]/10 hover:bg-[#FF0000] text-[#FF0000] hover:text-white" },
+                    { icon: <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>, color: "bg-white/5 hover:bg-white text-gray-300 hover:text-black" }
+                  ].map((soc, idx) => (
+                    <button
+                      key={idx}
+                      className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-[1.1] hover:shadow-lg cursor-pointer ${soc.color}`}
+                    >
+                      {soc.icon}
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
 
             {/* Horizontal Divider */}
@@ -411,29 +434,6 @@ export function Footer() {
               </form>
             </div>
 
-            {/* Follow Us Social Icons */}
-            <div className="space-y-3">
-              <h5 className="text-[10px] text-white font-bold tracking-widest uppercase">
-                FOLLOW US
-              </h5>
-              <div className="flex gap-2.5 pt-1">
-                {[
-                  { icon: <Facebook size={14} />, color: "bg-[#1877F2]/10 hover:bg-[#1877F2] text-[#1877F2] hover:text-white" },
-                  { icon: <Linkedin size={14} />, color: "bg-[#0A66C2]/10 hover:bg-[#0A66C2] text-[#0A66C2] hover:text-white" },
-                  { icon: <Instagram size={14} />, color: "bg-[#E4405F]/10 hover:bg-[#E4405F] text-[#E4405F] hover:text-white" },
-                  { icon: <Youtube size={14} />, color: "bg-[#FF0000]/10 hover:bg-[#FF0000] text-[#FF0000] hover:text-white" },
-                  { icon: <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>, color: "bg-white/5 hover:bg-white text-gray-300 hover:text-black" }
-                ].map((soc, idx) => (
-                  <button
-                    key={idx}
-                    className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-[1.1] hover:shadow-lg cursor-pointer ${soc.color}`}
-                  >
-                    {soc.icon}
-                  </button>
-                ))}
-              </div>
-            </div>
-
           </div>
 
         </div>
@@ -446,7 +446,7 @@ export function Footer() {
           
           {/* Copyright */}
           <div className="text-center md:text-left">
-            <span>© {currentYear} Analytics Clouds. All Rights Reserved.</span>
+            <span>©2025 Analytics Clouds. All Rights Reserved.</span>
           </div>
 
           {/* Legal Links with dividers */}
@@ -455,7 +455,7 @@ export function Footer() {
             <span className="text-white/10 hidden sm:inline">|</span>
             <Link to="/terms-of-service" className="hover:text-white transition-colors cursor-pointer">Terms &amp; Conditions</Link>
             <span className="text-white/10 hidden sm:inline">|</span>
-            <Link to="/services" className="hover:text-white transition-colors cursor-pointer">Sitemap</Link>
+            <Link to="/faqs" className="hover:text-white transition-colors cursor-pointer">FAQs</Link>
           </div>
 
           {/* Back to Top */}

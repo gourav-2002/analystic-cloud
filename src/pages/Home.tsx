@@ -363,7 +363,7 @@ export function Home({ onContactClick }: HomeProps) {
   return (
     <div className="bg-white overflow-hidden">
       {/* 1. Hero — Real, Full-Width Photography */}
-      <section className="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-[#303360]">
+      <section className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center pt-16 overflow-hidden bg-[#303360]">
         {/* Full-bleed background photograph */}
         <div className="absolute inset-0 z-0">
           <img
@@ -440,52 +440,6 @@ export function Home({ onContactClick }: HomeProps) {
               </motion.div>
             </div>
 
-            {/* Right Side: Layered floating results card on photo corner */}
-            <div className="lg:col-span-5 flex justify-end relative w-full mt-6 lg:mt-0">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="w-full max-w-sm bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-white/40 text-left hover:scale-[1.01] transition-transform duration-300"
-              >
-                <div className="flex items-center justify-between border-b border-gray-100 pb-4 mb-4">
-                  <div className="flex items-center gap-2">
-                    <span className="flex h-2 w-2 relative">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FE7146] opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FE7146]"></span>
-                    </span>
-                    <span className="text-xs font-mono font-bold text-[#303360] uppercase tracking-wider">
-                      Live Performance Metrics
-                    </span>
-                  </div>
-                  <Sparkles size={14} className="text-[#FE7146]" />
-                </div>
-
-                <div className="space-y-4">
-                  {/* Metric 1 */}
-                  <div className="flex items-center justify-between">
-                    <div className="text-sm font-medium text-slate-500">Avg. ROAS</div>
-                    <div className="text-xl font-mono font-black text-[#FE7146]">
-                      <DelayedCounter endValue={4} suffix=".8x" delay={800} />
-                    </div>
-                  </div>
-                  {/* Metric 2 */}
-                  <div className="flex items-center justify-between">
-                    <div className="text-sm font-medium text-slate-500">Leads Delivered</div>
-                    <div className="text-xl font-mono font-black text-[#303360]">
-                      <DelayedCounter endValue={12} suffix=",500+" delay={900} />
-                    </div>
-                  </div>
-                  {/* Metric 3 */}
-                  <div className="flex items-center justify-between">
-                    <div className="text-sm font-medium text-slate-500">Client Retention</div>
-                    <div className="text-xl font-mono font-black text-indigo-600">
-                      <DelayedCounter endValue={98} suffix="%" delay={1000} />
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
           </div>
         </div>
 

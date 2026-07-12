@@ -240,7 +240,7 @@ export function AboutUs({ onContactClick }: AboutUsProps) {
     <div className="bg-white overflow-hidden">
       
       {/* 1. Hero — Real, Full-Width Photography (Consistent with Homepage Hero) */}
-      <section className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center pt-24 overflow-hidden bg-[#303360]">
+      <section className="relative min-h-[75vh] lg:min-h-[80vh] flex items-center justify-center pt-16 overflow-hidden bg-[#303360]">
         
         {/* Full-bleed background workspace photograph */}
         <div className="absolute inset-0 z-0">

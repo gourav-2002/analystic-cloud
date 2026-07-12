@@ -365,10 +365,10 @@ export function LifeAtAnalyticsClouds() {
   };
 
   return (
-    <div id="life-at-analytics-clouds-container" className="pt-20 bg-white text-[#333333] selection:bg-[#FE7146] selection:text-white">
+    <div id="life-at-analytics-clouds-container" className="bg-white text-[#333333] selection:bg-[#FE7146] selection:text-white">
       
       {/* 1. Hero Section - Photo Forward Team Collage */}
-      <section id="careers-hero" className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+      <section id="careers-hero" className="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
         
         {/* Absolute Background image with dark/orange filter overlay */}
         <div className="absolute inset-0 z-0">
@@ -385,7 +385,7 @@ export function LifeAtAnalyticsClouds() {
         </div>
 
         {/* Hero content container */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-16 sm:pt-24 pb-12 sm:pb-20 text-left">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-28 sm:pt-32 pb-12 sm:pb-16 text-left">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             {/* Left side: Heading */}

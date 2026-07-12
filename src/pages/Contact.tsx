@@ -106,7 +106,7 @@ export function Contact() {
     <div id="contact-page-container" className="bg-white text-[#333333] selection:bg-[#FE7146] selection:text-white">
       
       {/* 1. Hero — Real, Full-Width Photography (Consistent with Homepage/AboutUs) */}
-      <section id="contact-hero" className="relative min-h-[50vh] sm:min-h-[55vh] lg:min-h-[60vh] flex items-center justify-center pt-24 overflow-hidden bg-[#303360]">
+      <section id="contact-hero" className="relative min-h-[45vh] sm:min-h-[50vh] lg:min-h-[55vh] flex items-center justify-center pt-16 overflow-hidden bg-[#303360]">
         
         {/* Full-bleed background team photograph */}
         <div className="absolute inset-0 z-0">

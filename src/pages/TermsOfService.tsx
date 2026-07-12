@@ -117,10 +117,10 @@ Alternatively, you can submit an official query directly through our digital Con
   };
 
   return (
-    <div id="terms-of-service-page-container" className="pt-20 bg-white text-[#333333] selection:bg-[#FE7146] selection:text-white">
-      
-      {/* 1. Hero Section (dark navy band) */}
-      <section id="terms-hero-section" className="bg-[#303360] text-white py-16 sm:py-24 relative overflow-hidden">
+    <div id="terms-of-service-page-container" className="bg-white text-[#333333] selection:bg-[#FE7146] selection:text-white">
+
+      {/* 1. Hero Section (dark navy band, extends behind the fixed navbar — no white gap) */}
+      <section id="terms-hero-section" className="bg-[#303360] text-white pt-28 pb-16 sm:pt-32 sm:pb-20 relative overflow-hidden">
         
         {/* Subtle background decoration (low opacity orange gradient and dots) */}
         <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">

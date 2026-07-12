@@ -26,6 +26,7 @@ import { PerformanceMarketing } from "./pages/PerformanceMarketing";
 import { EmailMarketing } from "./pages/EmailMarketing";
 import { SmsMarketing } from "./pages/SmsMarketing";
 import { DisplayNativeAds } from "./pages/DisplayNativeAds";
+import { FAQS } from "./pages/FAQS";
 
 export default function App() {
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -67,6 +68,7 @@ export default function App() {
               <Route path="/blog" element={<Blog onContactClick={handleOpenContact} />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
+              <Route path="/faqs" element={<FAQS />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             </Routes>
           </main>

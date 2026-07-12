@@ -213,10 +213,12 @@ export function Navbar({ onContactClick }: NavbarProps) {
   return (
     <header
       id="global-navbar"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#303360] ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "py-2 shadow-lg border-b border-white/5 bg-[#303360]/95 backdrop-blur-md"
-          : "py-3 border-b border-white/5"
+          : location.pathname === "/"
+          ? "py-3 bg-transparent border-b border-transparent"
+          : "py-3 bg-[#303360] border-b border-white/5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -227,7 +229,7 @@ export function Navbar({ onContactClick }: NavbarProps) {
             <img
               src="https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783792699/analystic-cloud-logo_k3b1fu.png"
               alt="Analytics Clouds — Make Your Ideas Trending"
-              className="h-9 sm:h-10 w-auto"
+              className="h-11 sm:h-12 w-auto"
               referrerPolicy="no-referrer"
             />
           </Link>
@@ -491,13 +493,13 @@ export function Navbar({ onContactClick }: NavbarProps) {
 
           {/* Solid orange Get In Touch button on right */}
           <div className="hidden lg:block shrink-0">
-            <button
-              onClick={onContactClick}
+            <Link
+              to="/contact"
               className="bg-[#FE7146] hover:bg-[#e0562b] text-white font-extrabold text-[12px] px-5 py-3 rounded-xl shadow-lg shadow-[#FE7146]/20 hover:shadow-[#FE7146]/30 transition-all flex items-center justify-center gap-1.5 hover:scale-[1.03] active:scale-[0.97] cursor-pointer"
             >
               <span>Get In Touch</span>
               <ArrowRight size={13} className="animate-pulse" />
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle Button */}
@@ -604,16 +606,14 @@ export function Navbar({ onContactClick }: NavbarProps) {
 
               {/* Get In Touch Full-Width Button */}
               <div className="pt-3">
-                <button
-                  onClick={() => {
-                    setIsOpen(false);
-                    onContactClick();
-                  }}
+                <Link
+                  to="/contact"
+                  onClick={() => setIsOpen(false)}
                   className="w-full bg-[#FE7146] hover:bg-[#e0562b] text-white font-extrabold text-xs py-3.5 rounded-xl shadow-lg shadow-[#FE7146]/20 transition-all flex items-center justify-center gap-2"
                 >
                   <span>Get In Touch</span>
                   <ArrowRight size={14} />
-                </button>
+                </Link>
               </div>
 
             </div>
