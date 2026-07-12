@@ -363,7 +363,7 @@ export function Home({ onContactClick }: HomeProps) {
   return (
     <div className="bg-white overflow-hidden">
       {/* 1. Hero — Real, Full-Width Photography */}
-      <section className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center pt-16 overflow-hidden bg-[#303360]">
+      <section className="relative min-h-[80vh] lg:min-h-[85vh] flex items-center justify-center pt-16 overflow-hidden bg-[#303360]">
         {/* Full-bleed background photograph */}
         <div className="absolute inset-0 z-0">
           <img
@@ -381,7 +381,7 @@ export function Home({ onContactClick }: HomeProps) {
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16 lg:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left side content overlaid on scrim */}
-            <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-left">
+            <div className="lg:col-span-7 space-y-6 sm:space-y-6 text-left">
               {/* Eyebrow tag */}
               <motion.div
                 initial={{ opacity: 0, y: 15 }}
@@ -389,7 +389,7 @@ export function Home({ onContactClick }: HomeProps) {
                 transition={{ duration: 0.5 }}
                 className="inline-block font-mono text-xs font-semibold text-[#FE7146] tracking-wider uppercase bg-[#FFF1EC]/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-[#FE7146]/30"
               >
-                // PERFORMANCE MARKETING AGENCY · NOIDA
+                DIGITAL & PERFORMANCE MARKETING • NOIDA
               </motion.div>
 
               {/* Clamp-based headline */}
@@ -397,11 +397,11 @@ export function Home({ onContactClick }: HomeProps) {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight font-display"
+                className="text-6xl sm:text-6xl lg:text-6xl font-black text-white leading-[1.2] tracking-tight font-display"
               >
-                We Turn Clicks Into Customers, and Data Into{" "}
+                Helping Businesses, Scale Faster With{" "}
                 <span className="text-[#FE7146] inline-block relative">
-                  Growth.
+                  Digital Growth.
                   <span className="absolute left-0 bottom-1 w-full h-1 bg-[#FE7146]/20 rounded" />
                 </span>
               </motion.h1>
@@ -413,7 +413,7 @@ export function Home({ onContactClick }: HomeProps) {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-gray-200 text-base sm:text-lg font-normal leading-relaxed max-w-xl"
               >
-                Analytics Clouds is a leading performance-driven digital marketing agency helping brands in Noida and across India scale with data intelligence and flawless multi-channel execution.
+                Analytics Clouds is a full-service digital growth partner helping businesses scale through SEO, performance marketing, AI-powered automation, web experiences, and data-driven strategies that deliver measurable business results.
               </motion.p>
 
               {/* CTAs */}
@@ -424,12 +424,12 @@ export function Home({ onContactClick }: HomeProps) {
                 className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
               >
                 <button
-                  onClick={onContactClick}
-                  className="bg-[#FE7146] hover:bg-[#e0562b] text-white font-extrabold px-8 py-4 rounded-xl shadow-lg shadow-[#FE7146]/25 hover:shadow-[#FE7146]/35 transition-all text-center flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
-                >
-                  <span>Get a Free Growth Audit</span>
-                  <TrendingUp size={18} />
-                </button>
+  onClick={() => navigate("/contact")}
+  className="bg-[#FE7146] hover:bg-[#e0562b] text-white font-extrabold px-8 py-4 rounded-xl shadow-lg shadow-[#FE7146]/25 hover:shadow-[#FE7146]/35 transition-all text-center flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+>
+  <span>Get a Free Growth Audit</span>
+  <TrendingUp size={18} />
+</button> 
 
                 <button
                   onClick={() => navigate("/services")}
