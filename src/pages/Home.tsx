@@ -367,7 +367,8 @@ export function Home({ onContactClick }: HomeProps) {
         {/* Full-bleed background photograph */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=90"
+            src="https://res.cloudinary.com/dqjlffxja/image/upload/v1783866909/firsrt-try_lpqjzv.jpg"
+            
             alt="Analytics Clouds Campaign Strategy Team"
             className="w-full h-full object-cover object-center scale-105 filter brightness-95"
             referrerPolicy="no-referrer"

@@ -111,9 +111,9 @@ export function Contact() {
         {/* Full-bleed background team photograph */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80"
+            src="https://res.cloudinary.com/dqjlffxja/image/upload/v1783872960/contact-us-page_wbsfex.jpg"
             alt="Analytics Clouds Noida performance consulting squad"
-            className="w-full h-full object-cover object-center filter brightness-90"
+            className="w-full h-full object-cover object-top filter brightness-90"
             referrerPolicy="no-referrer"
           />
           {/* Subtle navy scrim gradient ensuring outstanding contrast */}
@@ -177,29 +177,7 @@ export function Contact() {
               </motion.div>
             </div>
 
-            {/* Right Column: Layered trust chips matching design criteria */}
-            <div className="lg:col-span-4 flex justify-end relative w-full lg:pb-4">
-              <motion.div
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.4 }}
-                className="flex flex-col gap-3 w-full max-w-xs"
-              >
-                {[
-                  { icon: <Zap size={14} className="text-[#FE7146]" />, label: "Quick Response — Reply within 24h" },
-                  { icon: <Sparkles size={14} className="text-amber-500" />, label: "Expert Performance Support" },
-                  { icon: <ShieldCheck size={14} className="text-emerald-500" />, label: "100% Secure & Private" }
-                ].map((chip, idx) => (
-                  <div
-                    key={idx}
-                    className="flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-full border border-white/40 shadow-lg text-left text-xs text-[#303360] font-mono font-bold"
-                  >
-                    {chip.icon}
-                    <span>{chip.label}</span>
-                  </div>
-                ))}
-              </motion.div>
-            </div>
+           
 
           </div>
         </div>

@@ -373,7 +373,7 @@ export function LifeAtAnalyticsClouds() {
         {/* Absolute Background image with dark/orange filter overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&h=850&q=80"
+            src="https://res.cloudinary.com/dqjlffxja/image/upload/v1783872294/life-at-analystic-cloud_lhcccf.jpg"
             alt="Analytics Clouds Noida Team"
             className="w-full h-full object-cover scale-[1.01]"
             referrerPolicy="no-referrer"
@@ -474,20 +474,7 @@ export function LifeAtAnalyticsClouds() {
 
             </div>
 
-            {/* Right side: Floating Decorative Badges for visual interest */}
-            <div className="hidden lg:col-span-4 lg:flex flex-col gap-4">
-              <div className="p-5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/10 text-left rotate-1 shadow-xl hover:rotate-0 transition-transform duration-300">
-                <span className="text-[10px] uppercase font-black text-[#FE7146] tracking-widest block mb-1">NOIDA HEADQUARTERS</span>
-                <p className="text-white font-bold text-sm">"The positive energy is instantly contagious."</p>
-                <p className="text-gray-300 text-[11px] mt-2 font-medium">— Noida Campaign Squad</p>
-              </div>
-
-              <div className="p-5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/10 text-left -rotate-2 translate-x-4 shadow-xl hover:rotate-0 transition-transform duration-300">
-                <span className="text-[10px] uppercase font-black text-teal-400 tracking-widest block mb-1">CAREER MILESTONE</span>
-                <p className="text-white font-bold text-sm">3 Senior Leads promoted internally this quarter alone.</p>
-                <p className="text-gray-300 text-[11px] mt-2 font-medium">— HR Excellence Team</p>
-              </div>
-            </div>
+          
 
           </div>
         </div>

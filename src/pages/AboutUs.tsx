@@ -245,7 +245,7 @@ export function AboutUs({ onContactClick }: AboutUsProps) {
         {/* Full-bleed background workspace photograph */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=90"
+            src="https://res.cloudinary.com/dqjlffxja/image/upload/v1783868072/about_us_imaghe_uwzdfc.jpg"
             alt="Analytics Clouds Noida Creative Strategy HQ"
             className="w-full h-full object-cover object-center scale-105 filter brightness-90"
             referrerPolicy="no-referrer"
@@ -311,54 +311,6 @@ export function AboutUs({ onContactClick }: AboutUsProps) {
                 </button>
               </motion.div>
             </div>
-
-            {/* Right Column: Layered floating stat strip matching Homepage treatment */}
-            <div className="lg:col-span-5 flex justify-end relative w-full mt-6 lg:mt-0">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="w-full max-w-sm bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-white/40 text-left hover:scale-[1.01] transition-transform duration-300"
-              >
-                <div className="flex items-center justify-between border-b border-gray-100 pb-4 mb-4">
-                  <div className="flex items-center gap-2">
-                    <span className="flex h-2 w-2 relative">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FE7146] opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FE7146]"></span>
-                    </span>
-                    <span className="text-xs font-mono font-bold text-[#303360] uppercase tracking-wider">
-                      Agency Scale Stats
-                    </span>
-                  </div>
-                  <Sparkles size={14} className="text-[#FE7146]" />
-                </div>
-
-                <div className="space-y-4">
-                  {/* Metric 1 */}
-                  <div className="flex items-center justify-between">
-                    <div className="text-sm font-medium text-slate-500">Years Experience</div>
-                    <div className="text-xl font-mono font-black text-[#FE7146]">
-                      <DelayedCounter endValue={7} suffix="+" delay={800} />
-                    </div>
-                  </div>
-                  {/* Metric 2 */}
-                  <div className="flex items-center justify-between">
-                    <div className="text-sm font-medium text-slate-500">Happy Clients</div>
-                    <div className="text-xl font-mono font-black text-[#303360]">
-                      <DelayedCounter endValue={200} suffix="+" delay={900} />
-                    </div>
-                  </div>
-                  {/* Metric 3 */}
-                  <div className="flex items-center justify-between">
-                    <div className="text-sm font-medium text-slate-500">Successful Campaigns</div>
-                    <div className="text-xl font-mono font-black text-indigo-600">
-                      <DelayedCounter endValue={500} suffix="+" delay={1000} />
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-
           </div>
         </div>
       </section>

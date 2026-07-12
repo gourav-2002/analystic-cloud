@@ -309,7 +309,7 @@ export function Footer() {
                 { label: "About Us", path: "/about-us" },
                 { label: "Services", path: "/services" },
                 { label: "Life at Analytics Clouds", path: "/life-at-analytics-clouds" },
-                { label: "Resources", path: "/blog" },
+                { label: "Blog", path: "/blog" },
                 { label: "Contact Us", path: "/contact" }
               ].map((link, idx) => (
                 <li key={idx} className="border-b border-white/[0.02] last:border-0 pb-1.5 last:pb-0">
